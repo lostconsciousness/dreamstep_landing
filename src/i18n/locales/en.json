@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "intro": "Home",
+    "goal": "Our Goal",
+    "functions": "Features",
+    "photos": "Examples",
+    "skins": "Skins"
+  },
+  "hero": {
+    "title": "Walk. Earn. Play.",
+    "subtitle": "Get real Web3 crypto tokens for every step you take. Invite friends, collect skins, and compete on the leaderboard — all inside Telegram.",
+    "cta": "Start Earning Now"
+  },
+  "goal": {
+    "badge": "Our Mission",
+    "title": "We Want People to Move More",
+    "description": "In the modern world, most of us spend too much time sitting at screens. We believe that physical activity and walking should be rewarded. Dream Step motivates you to walk more, enjoy fresh air, and stay healthy — while earning real crypto tokens for every step.",
+    "stats": {
+      "users": "Active Users",
+      "steps": "Steps Tracked",
+      "tokens": "Tokens Earned"
+    }
+  },
+  "functions": {
+    "badge": "What You Can Do",
+    "title": "App Features",
+    "items": {
+      "walk": {
+        "title": "Walk & Earn Tokens",
+        "description": "Every step counts. Walk in real life and receive Web3 tokens directly into your wallet."
+      },
+      "friends": {
+        "title": "Invite Friends & Play Together",
+        "description": "Bring your friends and compete together. Earn bonus tokens for every invited user."
+      },
+      "wheel": {
+        "title": "Spin the Fortune Wheel",
+        "description": "Test your luck daily! Spin the wheel and win extra tokens, skins, or boosts."
+      },
+      "level": {
+        "title": "Upgrade Your Level",
+        "description": "The more you walk, the higher your level. Unlock exclusive rewards and multipliers."
+      },
+      "bonuses": {
+        "title": "Buy Bonuses",
+        "description": "Spend tokens on step multipliers, shields, and special abilities to earn even faster."
+      }
+    }
+  },
+  "photos": {
+    "badge": "See It in Action",
+    "title": "App Screenshots",
+    "items": {
+      "main": "Main Screen",
+      "wallet": "Wallet",
+      "leaderboard": "Leaderboard",
+      "wheel": "Fortune Wheel",
+      "shop": "Token Shop",
+      "profile": "Profile"
+    }
+  },
+  "skins": {
+    "badge": "Express Yourself",
+    "title": "Available Skins",
+    "description": "Choose a unique character to accompany you on your walks. People, kids, and even pets — everyone earns tokens together!",
+    "categories": {
+      "boy": "Boys",
+      "girl": "Girls",
+      "man": "Men",
+      "woman": "Women",
+      "pets": "Pets"
+    }
+  },
+  "footer": {
+    "tagline": "Walk more. Earn more. Live better.",
+    "links": {
+      "title": "Quick Links"
+    },
+    "social": {
+      "title": "Community"
+    },
+    "legal": {
+      "title": "Legal"
+    },
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 Dream Step. All rights reserved."
+  }
+}

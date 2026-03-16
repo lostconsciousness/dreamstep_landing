@@ -1,0 +1,125 @@
+:root {
+  --color-bg: #06061a;
+  --color-bg-elevated: #0e0e2a;
+  --color-bg-card: #141432;
+  --color-bg-card-hover: #1a1a40;
+  --color-primary: #6c5ce7;
+  --color-primary-light: #a29bfe;
+  --color-secondary: #00cec9;
+  --color-accent: #fdcb6e;
+  --color-accent-dark: #e17055;
+  --color-text: #f0f0ff;
+  --color-text-muted: #8888aa;
+  --color-border: rgba(108, 92, 231, 0.2);
+  --color-glass: rgba(20, 20, 50, 0.6);
+  --gradient-primary: linear-gradient(135deg, #6c5ce7 0%, #00cec9 100%);
+  --gradient-hero: linear-gradient(180deg, #0a0a2e 0%, #06061a 100%);
+  --gradient-card: linear-gradient(145deg, rgba(108, 92, 231, 0.08) 0%, rgba(0, 206, 201, 0.04) 100%);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 40px rgba(108, 92, 231, 0.15);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --max-width: 1200px;
+  --header-height: 72px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(108, 92, 231, 0.15);
+  color: var(--color-primary-light);
+  border: 1px solid rgba(108, 92, 231, 0.3);
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 680px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}
