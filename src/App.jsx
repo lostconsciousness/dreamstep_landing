@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 import Introduction from './sections/Introduction';
 import OurGoal from './sections/OurGoal';
 import AppFunctions from './sections/AppFunctions';
+import Staking from './sections/Staking';
 import PhotoExamples from './sections/PhotoExamples';
 import AvailableSkins from './sections/AvailableSkins';
 
@@ -14,6 +15,7 @@ export default function App() {
         <Introduction />
         <OurGoal />
         <AppFunctions />
+        <Staking />
         <PhotoExamples />
         <AvailableSkins />
       </main>

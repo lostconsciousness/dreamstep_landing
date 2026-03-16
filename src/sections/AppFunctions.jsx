@@ -2,11 +2,12 @@ import { useTranslation } from 'react-i18next';
 import styles from './AppFunctions.module.css';
 
 const FEATURES = [
-  { key: 'walk', icon: '👟', color: '#6c5ce7' },
+  { key: 'activate', icon: '⚡', color: '#6c5ce7' },
   { key: 'friends', icon: '👥', color: '#00cec9' },
   { key: 'wheel', icon: '🎡', color: '#fdcb6e' },
   { key: 'level', icon: '⬆️', color: '#e17055' },
-  { key: 'bonuses', icon: '🛒', color: '#a29bfe' },
+  { key: 'bonuses', icon: '⭐', color: '#a29bfe' },
+  { key: 'staking', icon: '🔒', color: '#00b894' },
 ];
 
 export default function AppFunctions() {

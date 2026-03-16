@@ -53,6 +53,55 @@
   justify-content: center;
 }
 
+.tokenomics {
+  width: 100%;
+  padding: 36px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.tokenomicsTitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tokenomicsDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.tokenomicsBars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.barFill {
+  height: 10px;
+  border-radius: 5px;
+  transition: width 0.6s ease;
+}
+
+.barLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
 @media (max-width: 768px) {
   .inner {
     grid-template-columns: 1fr;
@@ -61,5 +110,9 @@
 
   .visual {
     order: -1;
+  }
+
+  .tokenomics {
+    padding: 24px;
   }
 }

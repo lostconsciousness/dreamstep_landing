@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Placeholder from '../components/Placeholder';
 import styles from './OurGoal.module.css';
 
 export default function OurGoal() {
@@ -15,26 +14,39 @@ export default function OurGoal() {
 
           <div className={styles.highlights}>
             <div className={styles.highlight}>
-              <span className={styles.highlightIcon}>🏃</span>
-              <span className={styles.highlightText}>10,000+ steps/day</span>
+              <span className={styles.highlightIcon}>⚡</span>
+              <span className={styles.highlightText}>4 sessions / day</span>
             </div>
             <div className={styles.highlight}>
-              <span className={styles.highlightIcon}>💰</span>
-              <span className={styles.highlightText}>Real Web3 tokens</span>
+              <span className={styles.highlightIcon}>⏱️</span>
+              <span className={styles.highlightText}>2 hours each</span>
             </div>
             <div className={styles.highlight}>
-              <span className={styles.highlightIcon}>🌍</span>
-              <span className={styles.highlightText}>Global community</span>
+              <span className={styles.highlightIcon}>🌐</span>
+              <span className={styles.highlightText}>100% Web3</span>
             </div>
           </div>
         </div>
 
         <div className={styles.visual}>
-          <Placeholder
-            height={400}
-            label="Goal illustration"
-            icon="🎯"
-          />
+          <div className={styles.tokenomics}>
+            <h3 className={styles.tokenomicsTitle}>{t('goal.tokenomics.title')}</h3>
+            <p className={styles.tokenomicsDesc}>{t('goal.tokenomics.description')}</p>
+            <div className={styles.tokenomicsBars}>
+              <div className={styles.bar}>
+                <div className={styles.barFill} style={{ width: '90%', background: 'var(--gradient-primary)' }} />
+                <span className={styles.barLabel}>{t('goal.tokenomics.users')}</span>
+              </div>
+              <div className={styles.bar}>
+                <div className={styles.barFill} style={{ width: '5%', background: '#fdcb6e', minWidth: 40 }} />
+                <span className={styles.barLabel}>{t('goal.tokenomics.buyback')}</span>
+              </div>
+              <div className={styles.bar}>
+                <div className={styles.barFill} style={{ width: '5%', background: '#e17055', minWidth: 40 }} />
+                <span className={styles.barLabel}>{t('goal.tokenomics.team')}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

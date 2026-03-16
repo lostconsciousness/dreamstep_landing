@@ -35,8 +35,8 @@ export default function Introduction() {
           </div>
           <div className={styles.statDivider} />
           <div className={styles.stat}>
-            <span className={styles.statValue}>2B+</span>
-            <span className={styles.statLabel}>{t('goal.stats.steps')}</span>
+            <span className={styles.statValue}>8M+</span>
+            <span className={styles.statLabel}>{t('goal.stats.sessions')}</span>
           </div>
           <div className={styles.statDivider} />
           <div className={styles.stat}>

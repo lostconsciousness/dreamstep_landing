@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { key: 'intro', href: '#intro' },
   { key: 'goal', href: '#goal' },
   { key: 'functions', href: '#functions' },
+  { key: 'staking', href: '#staking' },
   { key: 'photos', href: '#photos' },
   { key: 'skins', href: '#skins' },
 ];

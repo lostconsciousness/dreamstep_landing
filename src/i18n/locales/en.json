@@ -3,21 +3,29 @@
     "intro": "Home",
     "goal": "Our Goal",
     "functions": "Features",
+    "staking": "Staking",
     "photos": "Examples",
     "skins": "Skins"
   },
   "hero": {
-    "title": "Walk. Earn. Play.",
-    "subtitle": "Get real Web3 crypto tokens for every step you take. Invite friends, collect skins, and compete on the leaderboard — all inside Telegram.",
+    "title": "Activate. Earn. Play.",
+    "subtitle": "No endless tapping. Just press Activate, go about your day, and earn real Web3 tokens automatically. Invite friends, collect skins, and become part of the decentralized future — all inside Telegram.",
     "cta": "Start Earning Now"
   },
   "goal": {
     "badge": "Our Mission",
-    "title": "We Want People to Move More",
-    "description": "In the modern world, most of us spend too much time sitting at screens. We believe that physical activity and walking should be rewarded. Dream Step motivates you to walk more, enjoy fresh air, and stay healthy — while earning real crypto tokens for every step.",
+    "title": "Simple Earnings Without Wasting Your Time",
+    "description": "We're tired of apps that make you tap the screen all day long just to earn a fraction of a cent. Dream Step is different — just hit Activate and tokens start accumulating automatically for 2 hours. You can activate up to 4 times a day. No grind, no wasted time — just passive income and a real Web3 experience.",
+    "tokenomics": {
+      "title": "Fair Tokenomics",
+      "description": "We believe the community should receive the lion's share. That's why our emission model is built around fairness:",
+      "users": "90% — Distributed to users",
+      "buyback": "5% — Token buyback & burn",
+      "team": "5% — Project team"
+    },
     "stats": {
       "users": "Active Users",
-      "steps": "Steps Tracked",
+      "sessions": "Sessions Activated",
       "tokens": "Tokens Earned"
     }
   },
@@ -25,9 +33,9 @@
     "badge": "What You Can Do",
     "title": "App Features",
     "items": {
-      "walk": {
-        "title": "Walk & Earn Tokens",
-        "description": "Every step counts. Walk in real life and receive Web3 tokens directly into your wallet."
+      "activate": {
+        "title": "Activate & Earn",
+        "description": "Press one button — and for the next 2 hours tokens are credited automatically every 2 seconds. Up to 4 sessions per day, plus bonuses."
       },
       "friends": {
         "title": "Invite Friends & Play Together",
@@ -39,11 +47,34 @@
       },
       "level": {
         "title": "Upgrade Your Level",
-        "description": "The more you walk, the higher your level. Unlock exclusive rewards and multipliers."
+        "description": "The more active you are, the higher your level. Unlock exclusive rewards and multipliers."
       },
       "bonuses": {
         "title": "Buy Bonuses",
-        "description": "Spend tokens on step multipliers, shields, and special abilities to earn even faster."
+        "description": "Purchase multipliers, shields, and special abilities using Telegram Stars or TON to earn even faster."
+      },
+      "staking": {
+        "title": "Stake Your Tokens",
+        "description": "Lock your tokens and earn passive rewards. The longer you stake, the higher the return."
+      }
+    }
+  },
+  "staking": {
+    "badge": "Passive Income",
+    "title": "Token Staking",
+    "description": "Don't let your tokens sit idle. Stake them inside the bot and earn additional rewards automatically. The longer the lock period, the higher the yield.",
+    "features": {
+      "flexible": {
+        "title": "Flexible Periods",
+        "description": "Choose a staking period that suits you — from 7 days to 365 days."
+      },
+      "rewards": {
+        "title": "Daily Rewards",
+        "description": "Rewards are credited daily to your balance, which you can reinvest."
+      },
+      "secure": {
+        "title": "Secure & Transparent",
+        "description": "All staking operations are logged on-chain. Full transparency, no hidden fees."
       }
     }
   },
@@ -55,14 +86,14 @@
       "wallet": "Wallet",
       "leaderboard": "Leaderboard",
       "wheel": "Fortune Wheel",
-      "shop": "Token Shop",
+      "shop": "Shop",
       "profile": "Profile"
     }
   },
   "skins": {
     "badge": "Express Yourself",
     "title": "Available Skins",
-    "description": "Choose a unique character to accompany you on your walks. People, kids, and even pets — everyone earns tokens together!",
+    "description": "Choose a unique character to accompany you during sessions. People, kids, and even pets — everyone earns tokens together!",
     "categories": {
       "boy": "Boys",
       "girl": "Girls",
@@ -72,7 +103,7 @@
     }
   },
   "footer": {
-    "tagline": "Walk more. Earn more. Live better.",
+    "tagline": "Activate. Earn. Live free.",
     "links": {
       "title": "Quick Links"
     },
@@ -84,6 +115,14 @@
     },
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "copyright": "© 2026 Dream Step. All rights reserved."
+    "disclaimer": "Disclaimer",
+    "copyright": "© 2026 Dream Step. All rights reserved.",
+    "disclaimerContent": {
+      "title": "Declaration of Intent and Disclaimer",
+      "section1Title": "1. Declaration of Intent and Ecosystem Development",
+      "section1": "The development team (hereinafter referred to as \"Developers\" or \"Company\") declares that its fundamental goal is the design, development, and implementation of an innovative digital product. All activities of the Company are aimed at creating a sustainable technological infrastructure and ecosystem intended to provide Users with cutting-edge tools for growth, interaction, and the potential to benefit from using the platform.\n\nThe Developers commit to making all necessary commercial and technical efforts (best efforts) to:\n\n• Ensure stable operation and continuous improvement of the product;\n• Develop functionality and expand the platform's integration capabilities;\n• Promote the project in the international market and scale its ecosystem.\n\nThe Company confirms its commitment to the long-term development of the project in the interests of the entire user community.",
+      "section2Title": "2. Risk Disclosure and Limitation of Liability",
+      "section2": "The User hereby acknowledges that they are aware of the specifics and risks associated with the digital asset industry. Despite the Team's good-faith efforts to develop the project, the User accepts the following terms:\n\n• No guarantee of profitability: The Developers expressly state the absence of any explicit or implied guarantees that the User will receive profit, income, dividends, or any other financial gain as a result of participating in the project or holding its digital assets.\n\n• Pricing and listing: The Company does not set, control, or bear responsibility for the formation of the digital asset's price at the time of its initial listing on exchanges, nor for its subsequent dynamics. The market value of the asset is determined solely by independent open-market factors, including supply and demand, as well as the general cryptocurrency market conditions.\n\n• Disclaimer of financial liability: Under no circumstances shall the Developers, founders, employees, or affiliated persons of the Company bear legal or financial responsibility for any direct, indirect, incidental, or punitive damages, including but not limited to: loss of capital, lost profits, or depreciation of assets.\n\n• Investment status: Neither the product itself nor the accompanying informational materials constitute a securities prospectus, an investment offer, or a financial recommendation. All decisions regarding the acquisition, holding, or sale of digital assets are made by the User independently and at their own full personal responsibility.\n\nThe User confirms that they have read this notice, fully understand its content, and assume all economic and legal risks associated with interacting with the product."
+    }
   }
 }

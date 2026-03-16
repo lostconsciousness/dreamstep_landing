@@ -9,7 +9,8 @@
 
 .viewer {
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
   max-width: 860px;
   margin: 0 auto;
@@ -61,8 +62,8 @@
 }
 
 .phone {
-  flex: 1;
-  max-width: 320px;
+  width: 280px;
+  flex-shrink: 0;
   aspect-ratio: 9 / 19.5;
   background: var(--color-bg-card);
   border: 2px solid var(--color-border);
@@ -73,10 +74,10 @@
 }
 
 .phoneNotch {
-  width: 120px;
-  height: 28px;
+  width: 100px;
+  height: 24px;
   background: var(--color-bg-elevated);
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 14px 14px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -94,35 +95,99 @@
   background: var(--color-bg-elevated);
 }
 
+/* ---- Mobile: horizontal scrollable tabs above phone ---- */
 @media (max-width: 768px) {
+  .header {
+    margin-bottom: 40px;
+  }
+
   .viewer {
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
   }
 
   .menu {
     width: 100%;
     flex-direction: row;
     overflow-x: auto;
-    gap: 8px;
-    padding-bottom: 8px;
+    gap: 0;
+    padding: 4px;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .menu::-webkit-scrollbar {
+    display: none;
   }
 
   .menuItem {
+    flex: 1 0 auto;
     flex-direction: column;
-    gap: 6px;
-    padding: 10px 14px;
+    gap: 4px;
+    padding: 10px 16px;
     text-align: center;
-    min-width: 80px;
+    min-width: 0;
+    border-radius: var(--radius-sm);
+  }
+
+  .menuIcon {
+    font-size: 1.1rem;
   }
 
   .menuLabel {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .menuItemActive {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: none;
   }
 
   .phone {
-    max-width: 280px;
+    width: 240px;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .phoneNotch {
+    width: 80px;
+    height: 20px;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .phoneScreen {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .phone {
+    width: 200px;
+    border-radius: 26px;
+    padding: 8px;
+  }
+
+  .phoneNotch {
+    width: 64px;
+    height: 16px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .phoneScreen {
+    border-radius: 18px;
+  }
+
+  .menuItem {
+    padding: 8px 10px;
+  }
+
+  .menuLabel {
+    font-size: 0.65rem;
   }
 }
