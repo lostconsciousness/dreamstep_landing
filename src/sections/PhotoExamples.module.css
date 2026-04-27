@@ -116,29 +116,45 @@
 
   .menu {
     width: 100%;
+    max-width: 100%;
+    position: relative;
     flex-direction: row;
     overflow-x: auto;
-    gap: 0;
-    padding: 4px;
+    gap: 8px;
+    padding: 8px 8px 10px;
     background: var(--color-bg-card);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(108, 92, 231, 0.9) rgba(255, 255, 255, 0.08);
   }
 
   .menu::-webkit-scrollbar {
-    display: none;
+    height: 7px;
+  }
+
+  .menu::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+  }
+
+  .menu::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #6c5ce7, #00cec9);
+    border-radius: 999px;
   }
 
   .menuItem {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
+    min-width: 110px;
     flex-direction: column;
     gap: 4px;
     padding: 10px 16px;
     text-align: center;
-    min-width: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-sm);
+    scroll-snap-align: start;
   }
 
   .menuIcon {
@@ -151,9 +167,9 @@
 
   .menuItemActive {
     background: var(--gradient-primary);
-    border-color: transparent;
+    border-color: rgba(255, 255, 255, 0.35);
     color: #fff;
-    box-shadow: none;
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.28);
   }
 
   .phone {
@@ -191,6 +207,7 @@
   }
 
   .menuItem {
+    min-width: 96px;
     padding: 8px 10px;
   }
 
