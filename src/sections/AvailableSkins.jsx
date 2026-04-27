@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './AvailableSkins.module.css';
 
-const BASE_URL = 'https://odm-back.store/media/dream_step_new';
+const BASE_URL = 'https://dreamstep.world/characters';
 
 const CATEGORIES = [
   {
