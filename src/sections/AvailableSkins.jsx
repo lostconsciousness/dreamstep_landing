@@ -48,7 +48,7 @@ export default function AvailableSkins() {
             {t('skins.description')}
           </p>
           <a
-            href="https://dreamstep.world/characters/"
+            href="https://dreamstep.world/characters"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.charactersLink}
