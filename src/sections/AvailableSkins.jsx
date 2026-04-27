@@ -47,6 +47,14 @@ export default function AvailableSkins() {
           <p className="section-description" style={{ margin: '0 auto' }}>
             {t('skins.description')}
           </p>
+          <a
+            href="https://dreamstep.world/characters/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.charactersLink}
+          >
+            {t('skins.charactersLink')}
+          </a>
         </div>
 
         <div className={styles.tabs}>

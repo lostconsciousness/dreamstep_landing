@@ -83,7 +83,7 @@
     "title": "App Screenshots",
     "items": {
       "main": "Main Screen",
-      "wallet": "Wallet",
+      "friends": "Friends",
       "leaderboard": "Leaderboard",
       "wheel": "Fortune Wheel",
       "shop": "Shop",
@@ -94,6 +94,7 @@
     "badge": "Express Yourself",
     "title": "Available Skins",
     "description": "Choose a unique character to accompany you during sessions. People, kids, and even pets — everyone earns tokens together!",
+    "charactersLink": "View all characters",
     "categories": {
       "boy": "Boys",
       "girl": "Girls",

@@ -16,6 +16,7 @@ export default function Header() {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [logoMissing, setLogoMissing] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -29,7 +30,16 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
         <a href="#intro" className={styles.logo}>
-          <span className={styles.logoIcon}>D</span>
+          {logoMissing ? (
+            <span className={styles.logoIcon}>D</span>
+          ) : (
+            <img
+              src="/assets/logo/logo.png"
+              alt="Dream Step"
+              className={styles.logoImage}
+              onError={() => setLogoMissing(true)}
+            />
+          )}
           <span className={styles.logoText}>Dream Step</span>
         </a>
 

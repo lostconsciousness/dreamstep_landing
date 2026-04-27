@@ -4,17 +4,19 @@ import Placeholder from '../components/Placeholder';
 import styles from './PhotoExamples.module.css';
 
 const SCREENSHOTS = [
-  { key: 'main', icon: '📱' },
-  { key: 'wallet', icon: '💳' },
-  { key: 'leaderboard', icon: '🏆' },
-  { key: 'wheel', icon: '🎡' },
-  { key: 'shop', icon: '🛍️' },
-  { key: 'profile', icon: '👤' },
+  { key: 'main', icon: '📱', image: '/assets/screenshots/main.png' },
+  { key: 'friends', icon: '👥', image: '/assets/screenshots/friends.png' },
+  { key: 'leaderboard', icon: '🏆', image: '/assets/screenshots/leaderboard.png' },
+  { key: 'wheel', icon: '🎡', image: '/assets/screenshots/wheel.png' },
+  { key: 'shop', icon: '🛍️', image: '/assets/screenshots/shop.png' },
+  { key: 'profile', icon: '👤', image: '/assets/screenshots/profile.png' },
 ];
 
 export default function PhotoExamples() {
   const { t } = useTranslation();
   const [active, setActive] = useState(0);
+  const [brokenImages, setBrokenImages] = useState({});
+  const activeScreenshot = SCREENSHOTS[active];
 
   return (
     <section id="photos" className={`section ${styles.photos}`}>
@@ -43,12 +45,24 @@ export default function PhotoExamples() {
           <div className={styles.phone}>
             <div className={styles.phoneNotch} />
             <div className={styles.phoneScreen}>
-              <Placeholder
-                width="100%"
-                height="100%"
-                label={t(`photos.items.${SCREENSHOTS[active].key}`)}
-                icon={SCREENSHOTS[active].icon}
-              />
+              {brokenImages[activeScreenshot.key] ? (
+                <Placeholder
+                  width="100%"
+                  height="100%"
+                  label={t(`photos.items.${activeScreenshot.key}`)}
+                  icon={activeScreenshot.icon}
+                />
+              ) : (
+                <img
+                  src={activeScreenshot.image}
+                  alt={t(`photos.items.${activeScreenshot.key}`)}
+                  className={styles.screenshot}
+                  loading="lazy"
+                  onError={() =>
+                    setBrokenImages((prev) => ({ ...prev, [activeScreenshot.key]: true }))
+                  }
+                />
+              )}
             </div>
           </div>
         </div>
